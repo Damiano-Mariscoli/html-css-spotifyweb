@@ -13,6 +13,7 @@ a {
 	color: currentColor;
 	text-decoration: none;
 }
+
 /* LAYOUT */
 .main-container{
     height: 100vh;
@@ -43,7 +44,24 @@ a {
 
 
 
-
+/* COVER ART */
+.cover-art >img{
+    height: 50px;
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+.cover-art{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+    color: white;
+}
+.song{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* DEBUG */
 .debug{
@@ -59,4 +77,16 @@ a {
 }
 .sidebar-bg{
     background-color: black;
+}
+.grey-text{
+    color: #7e7e7e;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.gap-20{
+    gap: 20px;
 }
