@@ -24,7 +24,7 @@ a {
     display: flex;
     flex-grow: 1;
 }
-.player{
+.player-bar{
    width: 100%; 
    height: 90px;
 }
@@ -39,6 +39,7 @@ a {
     width: 100%;
 }
 
+/* PLAYER STYLE */
 
 
 
@@ -46,5 +47,16 @@ a {
 
 /* DEBUG */
 .debug{
-    border: 5px solid;
+    border: 1px solid;
+}
+
+/* UTIL */
+.player-bar-bg{
+    background-color: #282828;
+}
+.flex{
+    display: flex;
+}
+.sidebar-bg{
+    background-color: black;
 }
