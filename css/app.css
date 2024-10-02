@@ -13,7 +13,9 @@ a {
 	color: currentColor;
 	text-decoration: none;
 }
-
+html{
+    font-family: sans-serif;
+}
 /* LAYOUT */
 .main-container{
     height: 100vh;
@@ -26,8 +28,13 @@ a {
     
 }
 .player-bar{
-   width: 100%; 
-   height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    min-height: 90px;
+    position: sticky;
+    bottom: 0px;
 }
 
 .container-full{
@@ -41,13 +48,63 @@ a {
 }
 /* SIDEBAR */
 .sidebar .logo{
-    width: 130px;
-    height: 40px;
+    width: 120px;
+    height: 35px;
 }
 .card{
     border-bottom: 1px white;
     flex-direction: column;
+    display: flex;
+    width: 100%;
+    
 }
+.icons{
+    align-items: center;
+    width: 22px;
+    height: 18px;
+}
+.home-feature{
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    justify-content: center;
+    padding:20px 0px;
+}
+.create{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.fa-solid.fa-plus{
+    border:10px solid #a3a3a3    ;
+    background-color: #a3a3a3;
+ }
+ .user-playlist{
+    margin-bottom: auto;
+ }
+ .download{
+    border-bottom: 1px white solid;
+ }
+ .download-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 10px;
+ }
+ .profile{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+ .profile .icons{
+    background-color: #808080;
+    border: 1px solid;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+ }
+
 /* PLAYER STYLE */
 
 /* COVER ART */
@@ -69,6 +126,7 @@ a {
 }
 /* PLAYER */
 .player-interact{
+    display: flex;
     flex-direction: column;
 }
 .progress-bar {
@@ -91,8 +149,12 @@ a {
     height: 5px;
     background-color: #7e7e7e;
     border-radius: 5px;
+    
 }
-
+.volume{
+    display: flex;
+    align-items: center;
+}
 /* DEBUG */
 .debug{
     border: 1px solid;
@@ -157,6 +219,13 @@ a {
 .padding-y-20{
     padding: 20px 0px;
 }
+.gap-8{
+    gap: 8px;
+}
+.content-bg{
+    background-color: #141922;
+}
+
 /* MEDIA QUERIES */
 @media (max-width:878px) {
 
