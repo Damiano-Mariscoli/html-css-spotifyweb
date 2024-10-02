@@ -42,9 +42,20 @@ html{
     flex-direction: row;
     height: 100%;
 }
-
+.upgrade-bar{
+    height: 90px;
+    width: 100%;
+    background-color: #080b12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
 .content{
     flex-grow: 1;
+}
+.btn{
+    border: 1px solid;
 }
 /* SIDEBAR */
 .sidebar .logo{
@@ -104,6 +115,35 @@ html{
     height: 30px;
     width: 30px;
  }
+
+
+
+
+
+ /* CONTENT */
+
+.content .btn{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: #080b12;
+    padding: 20px 40px;
+    border-radius: 999px;
+    color: white;
+}
+.category-selector{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
 
 /* PLAYER STYLE */
 
