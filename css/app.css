@@ -21,11 +21,12 @@ html{
     height: 100vh;
     display: flex;
     flex-direction: column; 
+    
 }
 .sidebar{
     width: 230px;
     display: flex;
-    flex-shrink: 0;
+    flex-shrink:0;
     
 }
 .player-bar{
@@ -33,14 +34,12 @@ html{
     justify-content: space-between;
     align-items: center;
     width: 100%; 
-    min-height: 90px;
-    position: sticky;
     bottom: 0px;
+    position: sticky;
 }
 
 .container-full{
     display: flex;
-    flex-direction: row;
     height: 100%;
 }
 .upgrade-bar{
@@ -55,6 +54,7 @@ html{
 .content{
     flex-grow: 1;
     overflow-y: auto;
+    height: 100%;
 }
 .btn{
     border: 1px solid;
@@ -69,7 +69,6 @@ html{
     flex-direction: column;
     display: flex;
     width: 100%;
-    position: relative;
     
 }
 .icons{
