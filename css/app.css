@@ -42,6 +42,8 @@ html{
     height: calc(100% - 100px)
 }
 .upgrade-bar{
+    position: sticky;
+    top: 0px;
     height: 90px;
     width: 100%;
     background-color: #080b12;
@@ -52,7 +54,7 @@ html{
 }
 .content{
     flex-grow: 1;
-    overflow-y: auto;
+    overflow-y: scroll;
     height: 100%;
 }
 .btn{
