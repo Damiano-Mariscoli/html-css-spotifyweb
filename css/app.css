@@ -25,6 +25,7 @@ html{
 .sidebar{
     width: 230px;
     display: flex;
+    flex-shrink: 0;
     
 }
 .player-bar{
@@ -53,6 +54,7 @@ html{
 }
 .content{
     flex-grow: 1;
+    overflow-y: auto;
 }
 .btn{
     border: 1px solid;
@@ -67,6 +69,7 @@ html{
     flex-direction: column;
     display: flex;
     width: 100%;
+    position: relative;
     
 }
 .icons{
@@ -107,6 +110,7 @@ html{
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 0 auto;
  }
  .profile .icons{
     background-color: #808080;
@@ -116,7 +120,11 @@ html{
     width: 30px;
  }
 
-
+.logo-responsive{
+    width: 120px;
+    height: 35px;
+    display: none;
+}
 
 
 
@@ -139,7 +147,11 @@ html{
     
 }
 
-
+.song-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 
 
@@ -294,6 +306,31 @@ html{
     }
     .volume-bar{
         width: 85px;
+    }
+    .sidebar  li> span{
+        display: none;
+    }
+    .home-feature{
+        gap: 20px;
+        align-items: center;
+    }
+    .sidebar .logo{
+        display: none;
         
+    }
+    .logo-responsive{
+        display: block;
+        
+    }
+    .sidebar h2,.download,.profile,.user-playlist,.create{
+        display: none;
+    }
+    .sidebar{
+        width: 50px;
+        padding: 0px;
+    }
+    .icons{
+        width: 30px;
+        height: 30px;
     }
 }
