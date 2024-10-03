@@ -27,13 +27,14 @@ img{
     height: 100vh;
     display: flex;
     flex-direction: column; 
+    overflow: hidden;
     
 }
 .sidebar{
     width: 230px;
     display: flex;
     flex-shrink:0;
-    overflow-y: scroll;
+    
 }
 .player-bar{
     display: flex;
@@ -107,6 +108,7 @@ img{
  
  .user-playlist{
     margin-bottom: auto;
+    overflow: auto;
  }
  .download{
     border-bottom: 1px white solid;
