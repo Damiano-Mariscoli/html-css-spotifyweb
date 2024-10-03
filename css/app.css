@@ -16,6 +16,9 @@ a {
 html{
     font-family: sans-serif;
 }
+img{
+    width: 100%;
+}
 /* LAYOUT */
 .main-container{
     height: 100vh;
@@ -27,7 +30,7 @@ html{
     width: 230px;
     display: flex;
     flex-shrink:0;
-    
+    overflow-y: scroll;
 }
 .player-bar{
     display: flex;
@@ -69,7 +72,9 @@ html{
     border-bottom: 1px white;
     flex-direction: column;
     display: flex;
+    gap: 25px;
     width: 100%;
+    
     
 }
 .icons{
@@ -82,7 +87,7 @@ html{
     flex-direction: column;
     line-height: 40px;
     justify-content: center;
-    padding:20px 0px;
+    
 }
 .create{
     display: flex;
@@ -144,18 +149,40 @@ html{
     flex-direction: row;
     gap: 20px;
     justify-content: center;
-    
+    padding-top:20px ;
 }
 
 .song-list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 15px;
+    padding-left: 20px;
 }
 
+.category-title{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
 
-
-
+.song{
+    width: 175px;
+    height: 175px;
+    aspect-ratio: 1/1;
+}
+.song-list figcaption{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    max-width: 175px;
+    
+}
+.song-list p{
+    text-align: center;
+    color:  #74767b;
+    max-width: 175px;
+}
 
 /* PLAYER STYLE */
 
@@ -171,7 +198,7 @@ html{
     gap: 10px;
     color: white;
 }
-.song{
+.playing-song{
     display: flex; 
     justify-content: space-between;
     align-items: center;
@@ -277,7 +304,15 @@ html{
 .content-bg{
     background-color: #141922;
 }
-
+.padding-left-20{
+    padding-left: 20px;
+}
+.padding-top-15{
+    padding-top: 15px;
+}
+.padding-top-10{
+    padding-top: 10px;
+}
 /* MEDIA QUERIES */
 @media (max-width:878px) {
 
