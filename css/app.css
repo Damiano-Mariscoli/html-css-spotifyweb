@@ -160,6 +160,7 @@ img{
     justify-content: center;
     padding-top:20px ;
     flex-wrap: wrap ;
+    position: relative;
     
 }
 
@@ -195,8 +196,22 @@ img{
     max-width: 175px;
     padding: 10px 0px;
 }
-
-
+.lime-bar-y{
+    width: 3px;
+    height: 35px;
+    background-color: lime;
+    position: absolute;
+    left: 0;
+    bottom: calc(100% - 115px);
+}
+.lime-bar-x{
+    width: 35px;
+    height: 3px;
+    background-color: lime;
+    position: absolute;
+    left: 0;
+    bottom: calc(100% - 115px);
+}
 /* PLAYER STYLE */
 
 /* COVER ART */
@@ -247,6 +262,7 @@ img{
 .volume{
     display: flex;
     align-items: center;
+    position: relative;
 }
 /* DEBUG */
 .debug{
@@ -339,11 +355,27 @@ img{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  opacity: 1;
+  opacity: 0;
 }
+.prova{
+    width: 10px;  
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 50%;
+    top: calc(100% - 9px );
+    right: calc(100% - 160px);
+    position: absolute;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
 /* HOVER EFFECTS */
 .timer:hover{
     .dot{
+        opacity: 1;
+    }
+}
+.volume-bar:hover{
+    .prova{
         opacity: 1;
     }
 }
